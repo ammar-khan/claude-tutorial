@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.0 - 2026-09-29
+
+- New chapter 16, Costs, usage limits and prompt caching: subscription vs
+  API billing, what uses tokens, model price table (Sep 2026), how prompt
+  caching works, what breaks and keeps the cache in Claude Code, API
+  caching example in Python, Batch API, a savings checklist, and two new
+  diagrams.
+- Practice: exercise 15 (measure and cut the cost of a session). Quick
+  reference: cost cheat sheet.
+- Practice and Quick reference renumbered to chapters 17 and 18.
+
 ## 1.1.0 - 2026-09-29
 
 - New chapter 15, Harness engineering: the six parts of an agent harness

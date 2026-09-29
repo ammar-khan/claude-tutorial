@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="460" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">Prompt caching: a change rebuilds everything after it</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">The cache matches the start of the request exactly. Stable things go first; the conversation grows at the end.</text>
+
+  <g font-size="14">
+    <rect x="40" y="100" width="420" height="80" rx="12" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="60" y="130" font-size="16" font-weight="700" fill="#3730a3">1. System prompt + tool definitions</text>
+    <text x="60" y="156" fill="#334155">Changes when: model, tools or MCP servers change</text>
+
+    <rect x="40" y="192" width="420" height="80" rx="12" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <text x="60" y="222" font-size="16" font-weight="700" fill="#115e59">2. Project context</text>
+    <text x="60" y="248" fill="#334155">CLAUDE.md, memory - reloaded on /clear, /compact</text>
+
+    <rect x="40" y="284" width="420" height="80" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="60" y="314" font-size="16" font-weight="700" fill="#92400e">3. Conversation</text>
+    <text x="60" y="340" fill="#334155">Messages, replies, tool results - appended every turn</text>
+
+    <rect x="40" y="376" width="420" height="44" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="6 4" stroke-width="1.5"/>
+    <text x="60" y="404" fill="#475569">New message (always full price)</text>
+  </g>
+
+  <path d="M470,110 L470,410" stroke="#dc2626" stroke-width="3"/>
+  <path d="M462,398 L470,414 L478,398" fill="#dc2626"/>
+  <text x="480" y="250" font-size="12" fill="#991b1b" transform="rotate(90 480 250)">change here = rebuild below</text>
+
+  <g font-size="13">
+    <rect x="520" y="100" width="190" height="320" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="615" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#991b1b">Breaks the cache</text>
+    <text x="536" y="160" fill="#1e293b">- Switching model</text>
+    <text x="536" y="184" fill="#1e293b">- Effort change (most</text>
+    <text x="536" y="202" fill="#1e293b">   models)</text>
+    <text x="536" y="226" fill="#1e293b">- Turning on fast mode</text>
+    <text x="536" y="250" fill="#1e293b">- Adding MCP tools</text>
+    <text x="536" y="274" fill="#1e293b">- /compact (by design)</text>
+    <text x="536" y="298" fill="#1e293b">- Idle past the TTL</text>
+    <text x="536" y="322" fill="#1e293b">- Upgrading Claude Code</text>
+    <text x="536" y="346" fill="#1e293b">- API: a timestamp or</text>
+    <text x="536" y="364" fill="#1e293b">   ID in the system prompt</text>
+
+    <rect x="730" y="100" width="190" height="320" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="825" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">Keeps the cache</text>
+    <text x="746" y="160" fill="#1e293b">- Editing repo files</text>
+    <text x="746" y="184" fill="#1e293b">- Editing CLAUDE.md</text>
+    <text x="746" y="202" fill="#1e293b">   (applies next session)</text>
+    <text x="746" y="226" fill="#1e293b">- Changing permission</text>
+    <text x="746" y="244" fill="#1e293b">   mode, incl. plan</text>
+    <text x="746" y="268" fill="#1e293b">- Running a skill or</text>
+    <text x="746" y="286" fill="#1e293b">   slash command</text>
+    <text x="746" y="310" fill="#1e293b">- /rewind</text>
+    <text x="746" y="334" fill="#1e293b">- Spawning a subagent</text>
+  </g>
+</svg>

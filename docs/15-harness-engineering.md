@@ -1,6 +1,6 @@
 # 15. Harness engineering: making agents reliable
 
-[Home](../README.md) | Previous: [Routines](14-routines.md) | Next: [Practice](16-practice.md)
+[Home](../README.md) | Previous: [Routines](14-routines.md) | Next: [Costs and caching](16-costs-and-caching.md)
 
 ![Cogs and gears](https://images.unsplash.com/photo-1593062037896-764e9f52029e?w=1200&q=80&auto=format&fit=crop)
 <sub>Photo: Tim Mossholder on Unsplash</sub>
@@ -82,4 +82,4 @@ Then your job in the morning is to review evidence, not to redo the work.
 - [Prompting best practices: agentic systems](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)
 
 ---
-[Home](../README.md) | Previous: [Routines](14-routines.md) | Next: [Practice](16-practice.md)
+[Home](../README.md) | Previous: [Routines](14-routines.md) | Next: [Costs and caching](16-costs-and-caching.md)
