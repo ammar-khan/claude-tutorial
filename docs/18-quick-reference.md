@@ -1,6 +1,6 @@
-# 17. Quick reference
+# 18. Quick reference
 
-[Home](../README.md) | Previous: [Practice](16-practice.md)
+[Home](../README.md) | Previous: [Practice](17-practice.md)
 
 ## Which feature do I need?
 
@@ -69,6 +69,19 @@ Esc Esc    rewind menu (empty input) Ctrl+R     search history
 @file      mention a file            !cmd       run a shell command
 ```
 
+## Cost cheat sheet
+
+| Lever | Saves | How |
+|---|---|---|
+| Right model | Biggest | Sonnet for everyday, Opus for hard, Haiku for bulk/simple subagents |
+| Keep the cache | Up to ~90% of input | Pick model and effort at the start; don't switch mid-task |
+| Small context | Every turn | `/clear` between tasks, short `CLAUDE.md`, fewer MCP servers and plugins |
+| Lower effort | Output tokens | `/effort low` or `medium` for routine work |
+| Short answers | Output tokens | Say the length you want |
+| Subagents | Main context | Push logs, tests and searches into a subagent on a cheaper model |
+| Batch API | 50% | For non-urgent API jobs |
+| Measure | - | `/usage` (cost, cache hit rate, misses), `/context` (what fills the window) |
+
 ## File locations (Claude Code)
 
 | What | Where |
@@ -105,4 +118,4 @@ Esc Esc    rewind menu (empty input) Ctrl+R     search history
 - Model Context Protocol: [modelcontextprotocol.io](https://modelcontextprotocol.io)
 
 ---
-[Home](../README.md) | Previous: [Practice](16-practice.md)
+[Home](../README.md) | Previous: [Practice](17-practice.md)

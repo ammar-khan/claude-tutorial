@@ -41,10 +41,11 @@ explanations, diagrams and a hands-on exercise.
 13. [CLAUDE.md files and their types](docs/13-claude-md.md) - managed, user, project, local, subfolder, rules, imports
 14. [Routines and scheduled work](docs/14-routines.md) - cloud routines, desktop tasks, /loop, overnight reviews
 15. [Harness engineering](docs/15-harness-engineering.md) - making agents reliable: instructions, tools, state, verification, guardrails, lifecycle
+16. [Costs, usage limits and prompt caching](docs/16-costs-and-caching.md) - plans vs API, tokens, model prices, how caching works, what breaks it, a savings checklist
 
 ### Part 4 - Practice and reference
-16. [Practice: fourteen hands-on exercises](docs/16-practice.md)
-17. [Quick reference](docs/17-quick-reference.md) - cheat sheets, question-first templates, file locations
+17. [Practice: fifteen hands-on exercises](docs/17-practice.md)
+18. [Quick reference](docs/18-quick-reference.md) - cheat sheets, question-first templates, file locations
 
 ## How the pieces fit together
 
@@ -54,7 +55,7 @@ explanations, diagrams and a hands-on exercise.
 
 - **Short on time?** Read chapters 2 and 6. They will improve every
   conversation you have.
-- **Learning by doing?** Jump to the [practice exercises](docs/16-practice.md)
+- **Learning by doing?** Jump to the [practice exercises](docs/17-practice.md)
   and follow the links back when you need the background.
 - **Developer?** Skim part 1, then read part 3 in order.
 

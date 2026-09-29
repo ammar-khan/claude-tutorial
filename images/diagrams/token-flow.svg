@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="960" height="440" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">Where your tokens go on every turn</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">Each message re-sends the whole context. You pay for input (mostly cached) and for everything Claude writes.</text>
+
+  <text x="40" y="108" font-size="15" font-weight="700" fill="#334155">INPUT (re-sent each turn)</text>
+  <g font-size="13">
+    <rect x="40" y="120" width="130" height="200" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="105" y="148" text-anchor="middle" font-weight="700" fill="#3730a3">Always loaded</text>
+    <text x="54" y="176" fill="#334155">System prompt</text>
+    <text x="54" y="198" fill="#334155">Tool list, MCP</text>
+    <text x="54" y="220" fill="#334155">CLAUDE.md</text>
+    <text x="54" y="242" fill="#334155">Skill names +</text>
+    <text x="54" y="262" fill="#334155">descriptions</text>
+    <text x="54" y="284" fill="#334155">Instructions</text>
+
+    <rect x="180" y="120" width="130" height="200" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="245" y="148" text-anchor="middle" font-weight="700" fill="#115e59">History</text>
+    <text x="194" y="176" fill="#334155">Earlier messages</text>
+    <text x="194" y="198" fill="#334155">Claude's replies</text>
+    <text x="194" y="220" fill="#334155">Files it read</text>
+    <text x="194" y="242" fill="#334155">Command output</text>
+    <text x="194" y="264" fill="#334155">Attachments,</text>
+    <text x="194" y="284" fill="#334155">screenshots</text>
+
+    <rect x="320" y="120" width="110" height="200" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+    <text x="375" y="148" text-anchor="middle" font-weight="700" fill="#92400e">New</text>
+    <text x="334" y="176" fill="#334155">Your latest</text>
+    <text x="334" y="196" fill="#334155">message</text>
+    <text x="334" y="220" fill="#334155">New tool</text>
+    <text x="334" y="240" fill="#334155">results</text>
+  </g>
+  <rect x="40" y="332" width="270" height="34" rx="8" fill="#16a34a"/>
+  <text x="175" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Cached prefix: about 0.1x price</text>
+  <rect x="320" y="332" width="110" height="34" rx="8" fill="#d97706"/>
+  <text x="375" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Full price</text>
+
+  <line x1="440" y1="220" x2="520" y2="220" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+  <circle cx="590" cy="220" r="62" fill="#1e293b"/>
+  <text x="590" y="216" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">Model</text>
+  <text x="590" y="238" text-anchor="middle" font-size="12" fill="#cbd5e1">+ effort level</text>
+  <line x1="654" y1="220" x2="714" y2="220" stroke="#64748b" stroke-width="3" marker-end="url(#a)"/>
+
+  <text x="720" y="108" font-size="15" font-weight="700" fill="#334155">OUTPUT (priced ~5x input)</text>
+  <g font-size="13">
+    <rect x="720" y="120" width="200" height="90" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1.5"/>
+    <text x="740" y="148" font-weight="700" fill="#9d174d">Thinking</text>
+    <text x="740" y="172" fill="#334155">Hidden reasoning; grows</text>
+    <text x="740" y="192" fill="#334155">with effort level</text>
+    <rect x="720" y="230" width="200" height="90" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1.5"/>
+    <text x="740" y="258" font-weight="700" fill="#9d174d">Answer and tool calls</text>
+    <text x="740" y="282" fill="#334155">Text, code, edits,</text>
+    <text x="740" y="302" fill="#334155">commands</text>
+  </g>
+
+  <text x="480" y="404" text-anchor="middle" font-size="14" fill="#334155">Cheapest levers: keep "always loaded" small, clear history between tasks, and don't break the cached prefix.</text>
+</svg>

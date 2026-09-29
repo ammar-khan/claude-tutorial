@@ -24,7 +24,7 @@ anyway, with thanks.
 | Ch. 8 | [Tools on a rack](https://unsplash.com/photos/assorted-handheld-tools-in-tool-rack-t5YUoHW6zRo) | Barn Images |
 | Ch. 9, 15 | [Cogs and gears](https://unsplash.com/photos/cogs-and-gears-GmvH5v9l3K4) | Tim Mossholder |
 | Ch. 10 | [Green code on a screen](https://unsplash.com/photos/green-computer-code-on-screen-MPKQiDpMyqU) | Jake Walker |
-| Ch. 14 | [White calendar](https://unsplash.com/photos/white-calendar-tG4waP7YiAg) | Nathan Dumlao |
+| Ch. 14, 16 | [White calendar](https://unsplash.com/photos/white-calendar-tG4waP7YiAg) | Nathan Dumlao |
 
 ## Sources
 

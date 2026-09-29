@@ -288,6 +288,10 @@ way.
 
 ## Working efficiently
 
+For the full picture on tokens, prompt caching and cost, see
+[chapter 16](16-costs-and-caching.md).
+
+
 - **Give it a way to check its work.** Tests, a linter or a build command
   in `CLAUDE.md` let Claude verify changes instead of guessing.
 - **One task per session.** Start new work with `/clear`; unrelated

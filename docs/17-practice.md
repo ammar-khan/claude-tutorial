@@ -1,6 +1,6 @@
-# 16. Practice: fourteen hands-on exercises
+# 17. Practice: fifteen hands-on exercises
 
-[Home](../README.md) | Previous: [Harness engineering](15-harness-engineering.md) | Next: [Quick reference](17-quick-reference.md)
+[Home](../README.md) | Previous: [Costs and caching](16-costs-and-caching.md) | Next: [Quick reference](18-quick-reference.md)
 
 ![Person working at a desk with a laptop](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200&q=80&auto=format&fit=crop)
 <sub>Photo: Chris Ried on Unsplash</sub>
@@ -25,6 +25,7 @@ is invented. Do them in order, or jump to the level you need.
 | 12 | Schedule a routine | Claude Code (cloud) | Advanced |
 | 13 | Interview me into a spec | Chat or Claude Code | Intermediate |
 | 14 | Writer and reviewer | Claude Code | Advanced |
+| 15 | Measure and cut the cost of a session | Claude Code | Intermediate |
 
 ---
 
@@ -379,4 +380,27 @@ without asking you to re-explain.
 explained why there were none), fixes are made, and tests pass.
 
 ---
-[Home](../README.md) | Previous: [Harness engineering](15-harness-engineering.md) | Next: [Quick reference](17-quick-reference.md)
+
+## Exercise 15 - Measure and cut the cost of a session
+
+**Surface:** Claude Code | **Model:** Sonnet | **Time:** 15 min
+**Teaches:** reading `/usage`, spotting cache misses, and the habits that
+reduce spend ([chapter 16](16-costs-and-caching.md)).
+
+1. In the `todo-cli` project, start `claude` and run `/usage` and
+   `/context`. Write down the total, the cache line, and the biggest item in
+   the context.
+2. Do a small task (`Add a --version flag with a test`). Run `/usage`:
+   what share of input came from cache?
+3. Deliberately break the cache: `/model` to a different model, then ask
+   one question. Run `/usage` and find the miss and its likely cause.
+4. Switch back, then try the cheap habits: `/clear`, a specific prompt
+   (`In todo.py, rename the "done" command to "complete" and update the
+   tests`), and ask for a short answer.
+5. Compare the per-task cost of step 2 and step 4.
+
+**Done when:** you can point to one cache miss you caused, explain why it
+happened, and name two habits that made the later task cheaper.
+
+---
+[Home](../README.md) | Previous: [Costs and caching](16-costs-and-caching.md) | Next: [Quick reference](18-quick-reference.md)
