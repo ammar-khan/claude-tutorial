@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="400" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">Three ways to make Claude work on a schedule</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">Pick by where the work must run and what it must reach.</text>
+
+  <g font-size="14">
+    <rect x="30" y="96" width="290" height="276" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="175" y="130" text-anchor="middle" font-size="19" font-weight="700" fill="#3730a3">Routines (cloud)</text>
+    <text x="175" y="152" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#475569">claude.ai/code/routines, /schedule</text>
+    <text x="50" y="190" fill="#1e293b">+ Runs with your laptop closed</text>
+    <text x="50" y="214" fill="#1e293b">+ Schedule, API or GitHub trigger</text>
+    <text x="50" y="238" fill="#1e293b">+ Works on GitHub repos</text>
+    <text x="50" y="262" fill="#1e293b">- No access to local files</text>
+    <text x="50" y="286" fill="#1e293b">- Minimum interval: 1 hour</text>
+    <text x="175" y="344" text-anchor="middle" font-weight="700" fill="#3730a3">Nightly PR review, triage</text>
+
+    <rect x="335" y="96" width="290" height="276" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <text x="480" y="130" text-anchor="middle" font-size="19" font-weight="700" fill="#115e59">Scheduled tasks (desktop)</text>
+    <text x="480" y="152" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#475569">Desktop app, Cowork or Code</text>
+    <text x="355" y="190" fill="#1e293b">+ Reads your local files</text>
+    <text x="355" y="214" fill="#1e293b">+ Uses your connectors</text>
+    <text x="355" y="238" fill="#1e293b">+ Survives restarts</text>
+    <text x="355" y="262" fill="#1e293b">- Computer must be on and</text>
+    <text x="355" y="286" fill="#1e293b">   the app open</text>
+    <text x="480" y="344" text-anchor="middle" font-weight="700" fill="#115e59">Weekly local file report</text>
+
+    <rect x="640" y="96" width="290" height="276" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="785" y="130" text-anchor="middle" font-size="19" font-weight="700" fill="#92400e">/loop (in a session)</text>
+    <text x="785" y="152" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#475569">/loop 5m check the build</text>
+    <text x="660" y="190" fill="#1e293b">+ Instant, no setup</text>
+    <text x="660" y="214" fill="#1e293b">+ Fixed or self-paced interval</text>
+    <text x="660" y="238" fill="#1e293b">+ Full session context</text>
+    <text x="660" y="262" fill="#1e293b">- Stops when session ends</text>
+    <text x="660" y="286" fill="#1e293b">- Expires after 7 days</text>
+    <text x="785" y="344" text-anchor="middle" font-weight="700" fill="#92400e">Babysit a deploy or CI run</text>
+  </g>
+</svg>

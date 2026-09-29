@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="960" height="360" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">The plan mode loop</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">Think first, change later. Nothing is edited until you approve.</text>
+
+  <g font-size="14">
+    <rect x="30" y="120" width="160" height="110" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="110" y="162" text-anchor="middle" font-size="17" font-weight="700" fill="#3730a3">1. Ask</text>
+    <text x="110" y="188" text-anchor="middle" fill="#475569">Describe the goal</text>
+    <text x="110" y="208" text-anchor="middle" fill="#475569">and constraints</text>
+
+    <rect x="220" y="120" width="160" height="110" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <text x="300" y="162" text-anchor="middle" font-size="17" font-weight="700" fill="#115e59">2. Explore</text>
+    <text x="300" y="188" text-anchor="middle" fill="#475569">Claude reads code,</text>
+    <text x="300" y="208" text-anchor="middle" fill="#475569">read-only</text>
+
+    <rect x="410" y="120" width="160" height="110" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="490" y="162" text-anchor="middle" font-size="17" font-weight="700" fill="#92400e">3. Plan</text>
+    <text x="490" y="188" text-anchor="middle" fill="#475569">Steps, files,</text>
+    <text x="490" y="208" text-anchor="middle" fill="#475569">risks, tests</text>
+
+    <rect x="600" y="120" width="160" height="110" rx="14" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+    <text x="680" y="162" text-anchor="middle" font-size="17" font-weight="700" fill="#9d174d">4. Review</text>
+    <text x="680" y="188" text-anchor="middle" fill="#475569">You amend or</text>
+    <text x="680" y="208" text-anchor="middle" fill="#475569">approve</text>
+
+    <rect x="790" y="120" width="140" height="110" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="860" y="162" text-anchor="middle" font-size="17" font-weight="700" fill="#166534">5. Build</text>
+    <text x="860" y="188" text-anchor="middle" fill="#475569">Edits, runs</text>
+    <text x="860" y="208" text-anchor="middle" fill="#475569">tests, diffs</text>
+  </g>
+
+  <line x1="192" y1="175" x2="216" y2="175" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="382" y1="175" x2="406" y2="175" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="572" y1="175" x2="596" y2="175" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="762" y1="175" x2="786" y2="175" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <path d="M680,232 C680,300 490,300 490,236" fill="none" stroke="#db2777" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+  <text x="585" y="310" text-anchor="middle" font-size="13" fill="#9d174d">"No, keep planning": give targeted corrections</text>
+</svg>

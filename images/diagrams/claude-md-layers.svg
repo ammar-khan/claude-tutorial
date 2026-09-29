@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="520" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">CLAUDE.md: the layers Claude Code reads</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">Broad rules at the top, specific rules at the bottom. More specific files are read later and win on conflicts.</text>
+
+  <g font-size="14">
+    <rect x="60" y="96" width="840" height="58" rx="10" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/>
+    <text x="84" y="122" font-size="16" font-weight="700" fill="#0f172a">1. Managed policy</text>
+    <text x="84" y="143" fill="#475569">Set by IT for every user on the machine. You cannot override it.</text>
+    <text x="876" y="130" text-anchor="end" font-family="Consolas, monospace" font-size="13" fill="#334155">/etc/claude-code/CLAUDE.md (and OS equivalents)</text>
+
+    <rect x="100" y="166" width="760" height="58" rx="10" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="124" y="192" font-size="16" font-weight="700" fill="#3730a3">2. User</text>
+    <text x="124" y="213" fill="#475569">Your personal preferences in every project.</text>
+    <text x="836" y="200" text-anchor="end" font-family="Consolas, monospace" font-size="13" fill="#3730a3">~/.claude/CLAUDE.md</text>
+
+    <rect x="140" y="236" width="680" height="58" rx="10" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="164" y="262" font-size="16" font-weight="700" fill="#115e59">3. Project</text>
+    <text x="164" y="283" fill="#475569">Shared with the team through git.</text>
+    <text x="796" y="270" text-anchor="end" font-family="Consolas, monospace" font-size="13" fill="#115e59">./CLAUDE.md or ./.claude/CLAUDE.md</text>
+
+    <rect x="180" y="306" width="600" height="58" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+    <text x="204" y="332" font-size="16" font-weight="700" fill="#92400e">4. Local</text>
+    <text x="204" y="353" fill="#475569">Just you, just this repo. Add to .gitignore.</text>
+    <text x="756" y="340" text-anchor="end" font-family="Consolas, monospace" font-size="13" fill="#92400e">./CLAUDE.local.md</text>
+
+    <rect x="220" y="376" width="520" height="58" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1.5"/>
+    <text x="244" y="402" font-size="16" font-weight="700" fill="#9d174d">5. Subfolder and rules</text>
+    <text x="244" y="423" fill="#475569">Loaded only when Claude works there.</text>
+    <text x="716" y="400" text-anchor="end" font-family="Consolas, monospace" font-size="13" fill="#9d174d">api/CLAUDE.md, .claude/rules/*.md</text>
+
+    <rect x="260" y="446" width="440" height="52" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+    <text x="284" y="470" font-size="16" font-weight="700" fill="#166534">+ Auto memory</text>
+    <text x="284" y="489" fill="#475569">Notes Claude writes for itself.</text>
+    <text x="676" y="478" text-anchor="end" font-family="Consolas, monospace" font-size="13" fill="#166534">MEMORY.md</text>
+  </g>
+</svg>
