@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="420" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">Project vs Connector vs Skill vs Plugin</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">Four ideas people mix up. Each answers a different question.</text>
+
+  <g font-size="14">
+    <rect x="30" y="100" width="210" height="290" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="135" y="136" text-anchor="middle" font-size="20" font-weight="700" fill="#3730a3">Project</text>
+    <text x="135" y="164" text-anchor="middle" font-style="italic" fill="#475569">"What should it know?"</text>
+    <text x="50" y="206" fill="#1e293b">Files, instructions</text>
+    <text x="50" y="228" fill="#1e293b">and chats for one</text>
+    <text x="50" y="250" fill="#1e293b">piece of work.</text>
+    <text x="135" y="354" text-anchor="middle" font-weight="700" fill="#3730a3">A briefing pack</text>
+
+    <rect x="260" y="100" width="210" height="290" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="365" y="136" text-anchor="middle" font-size="20" font-weight="700" fill="#92400e">Connector</text>
+    <text x="365" y="164" text-anchor="middle" font-style="italic" fill="#475569">"What can it reach?"</text>
+    <text x="280" y="206" fill="#1e293b">A signed-in link to</text>
+    <text x="280" y="228" fill="#1e293b">an app: mail, drive,</text>
+    <text x="280" y="250" fill="#1e293b">tracker, calendar.</text>
+    <text x="365" y="354" text-anchor="middle" font-weight="700" fill="#92400e">An access badge</text>
+
+    <rect x="490" y="100" width="210" height="290" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <text x="595" y="136" text-anchor="middle" font-size="20" font-weight="700" fill="#115e59">Skill</text>
+    <text x="595" y="164" text-anchor="middle" font-style="italic" fill="#475569">"How does it do X?"</text>
+    <text x="510" y="206" fill="#1e293b">A folder with SKILL.md</text>
+    <text x="510" y="228" fill="#1e293b">that teaches one job,</text>
+    <text x="510" y="250" fill="#1e293b">loaded only when needed.</text>
+    <text x="595" y="354" text-anchor="middle" font-weight="700" fill="#115e59">A recipe card</text>
+
+    <rect x="720" y="100" width="210" height="290" rx="14" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+    <text x="825" y="136" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Plugin</text>
+    <text x="825" y="164" text-anchor="middle" font-style="italic" fill="#475569">"Give me the kit."</text>
+    <text x="740" y="206" fill="#1e293b">A bundle of skills,</text>
+    <text x="740" y="228" fill="#1e293b">commands, agents, hooks</text>
+    <text x="740" y="250" fill="#1e293b">and connectors.</text>
+    <text x="825" y="354" text-anchor="middle" font-weight="700" fill="#0f172a">A toolbox</text>
+  </g>
+</svg>

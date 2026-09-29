@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="960" height="380" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">How a connector works (MCP)</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">Claude talks to apps through MCP servers. You sign in, pick the tools, and can disconnect any time.</text>
+
+  <rect x="40" y="130" width="200" height="150" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="140" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#3730a3">Claude</text>
+  <text x="140" y="218" text-anchor="middle" font-size="13" fill="#475569">chat, Cowork or Code</text>
+
+  <rect x="340" y="130" width="260" height="150" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+  <text x="470" y="176" text-anchor="middle" font-size="18" font-weight="700" fill="#115e59">MCP server</text>
+  <text x="470" y="204" text-anchor="middle" font-size="13" fill="#475569">Model Context Protocol</text>
+  <text x="470" y="230" text-anchor="middle" font-size="13" fill="#475569">lists "tools" Claude may call</text>
+  <text x="470" y="254" text-anchor="middle" font-size="13" fill="#475569">e.g. search_files, create_event</text>
+
+  <g font-size="14" font-weight="600">
+    <rect x="700" y="100" width="220" height="44" rx="10" fill="#fffbeb" stroke="#d97706"/>
+    <text x="810" y="128" text-anchor="middle" fill="#92400e">Email and calendar</text>
+    <rect x="700" y="160" width="220" height="44" rx="10" fill="#fffbeb" stroke="#d97706"/>
+    <text x="810" y="188" text-anchor="middle" fill="#92400e">Cloud drive and docs</text>
+    <rect x="700" y="220" width="220" height="44" rx="10" fill="#fffbeb" stroke="#d97706"/>
+    <text x="810" y="248" text-anchor="middle" fill="#92400e">Issue tracker, wiki</text>
+    <rect x="700" y="280" width="220" height="44" rx="10" fill="#fffbeb" stroke="#d97706"/>
+    <text x="810" y="308" text-anchor="middle" fill="#92400e">Design, CRM, database</text>
+  </g>
+
+  <line x1="242" y1="190" x2="336" y2="190" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="336" y1="222" x2="242" y2="222" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="289" y="180" text-anchor="middle" font-size="12" fill="#475569">calls tool</text>
+  <text x="289" y="242" text-anchor="middle" font-size="12" fill="#475569">result</text>
+
+  <line x1="602" y1="205" x2="696" y2="122" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="602" y1="205" x2="696" y2="182" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="602" y1="205" x2="696" y2="242" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="602" y1="205" x2="696" y2="302" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+
+  <text x="480" y="350" text-anchor="middle" font-size="14" fill="#334155">Your sign-in (OAuth) decides what it can reach. Claude never sees more than that account can.</text>
+</svg>

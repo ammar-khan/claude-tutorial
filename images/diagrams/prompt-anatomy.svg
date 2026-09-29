@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="400" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">Anatomy of a good prompt</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">Brief it like a smart new colleague who has never met your audience.</text>
+
+  <rect x="40" y="100" width="880" height="130" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="64" y="134" font-size="16" fill="#1e293b"><tspan fill="#4f46e5" font-weight="700">[Task]</tspan> Write a short email to our volunteer group</text>
+  <text x="64" y="162" font-size="16" fill="#1e293b"><tspan fill="#0d9488" font-weight="700">[Context]</tspan> saying Saturday's park clean-up moves to Sunday because of rain.</text>
+  <text x="64" y="190" font-size="16" fill="#1e293b"><tspan fill="#d97706" font-weight="700">[Audience + tone]</tspan> Friendly, not apologetic; most of them are retirees.</text>
+  <text x="64" y="218" font-size="16" fill="#1e293b"><tspan fill="#db2777" font-weight="700">[Format + done]</tspan> Under 80 words, one clear call to action: reply if you can come.</text>
+
+  <g font-size="14">
+    <rect x="40" y="262" width="205" height="104" rx="10" fill="#eef2ff"/>
+    <text x="142" y="292" text-anchor="middle" font-weight="700" fill="#3730a3">Task</text>
+    <text x="142" y="318" text-anchor="middle" fill="#334155">What you want made</text>
+    <text x="142" y="340" text-anchor="middle" fill="#334155">or done</text>
+
+    <rect x="265" y="262" width="205" height="104" rx="10" fill="#f0fdfa"/>
+    <text x="367" y="292" text-anchor="middle" font-weight="700" fill="#115e59">Context</text>
+    <text x="367" y="318" text-anchor="middle" fill="#334155">Facts it cannot know</text>
+    <text x="367" y="340" text-anchor="middle" fill="#334155">unless you say them</text>
+
+    <rect x="490" y="262" width="205" height="104" rx="10" fill="#fffbeb"/>
+    <text x="592" y="292" text-anchor="middle" font-weight="700" fill="#92400e">Audience + tone</text>
+    <text x="592" y="318" text-anchor="middle" fill="#334155">Who reads it and</text>
+    <text x="592" y="340" text-anchor="middle" fill="#334155">how it should sound</text>
+
+    <rect x="715" y="262" width="205" height="104" rx="10" fill="#fdf2f8"/>
+    <text x="817" y="292" text-anchor="middle" font-weight="700" fill="#9d174d">Format + done</text>
+    <text x="817" y="318" text-anchor="middle" fill="#334155">Length, shape, and</text>
+    <text x="817" y="340" text-anchor="middle" fill="#334155">what "finished" means</text>
+  </g>
+</svg>

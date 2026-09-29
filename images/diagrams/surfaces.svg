@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="420" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">Where you can use Claude</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#475569">Same account everywhere. What changes is what Claude is allowed to touch.</text>
+
+  <g>
+    <rect x="30" y="100" width="210" height="280" rx="14" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="135" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#3730a3">Web and mobile</text>
+    <text x="135" y="158" text-anchor="middle" font-size="13" fill="#475569">claude.ai, iOS, Android</text>
+    <text x="50" y="200" font-size="14" fill="#1e293b">- Chat, Projects</text>
+    <text x="50" y="224" font-size="14" fill="#1e293b">- Artifacts, files</text>
+    <text x="50" y="248" font-size="14" fill="#1e293b">- Connectors</text>
+    <text x="50" y="272" font-size="14" fill="#1e293b">- Research, web search</text>
+    <rect x="50" y="318" width="170" height="40" rx="8" fill="#6366f1"/>
+    <text x="135" y="343" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Sees what you give it</text>
+  </g>
+
+  <g>
+    <rect x="260" y="100" width="210" height="280" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <text x="365" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#115e59">Desktop app</text>
+    <text x="365" y="158" text-anchor="middle" font-size="13" fill="#475569">Windows and macOS</text>
+    <text x="280" y="200" font-size="14" fill="#1e293b">- Chat + Cowork tasks</text>
+    <text x="280" y="224" font-size="14" fill="#1e293b">- Code tab, routines</text>
+    <text x="280" y="248" font-size="14" fill="#1e293b">- Scheduled tasks</text>
+    <text x="280" y="272" font-size="14" fill="#1e293b">- Local files, extensions</text>
+    <rect x="280" y="318" width="170" height="40" rx="8" fill="#0d9488"/>
+    <text x="365" y="343" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">+ folders you choose</text>
+  </g>
+
+  <g>
+    <rect x="490" y="100" width="210" height="280" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="595" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#92400e">Claude in Chrome</text>
+    <text x="595" y="158" text-anchor="middle" font-size="13" fill="#475569">browser extension</text>
+    <text x="510" y="200" font-size="14" fill="#1e293b">- Reads the current tab</text>
+    <text x="510" y="224" font-size="14" fill="#1e293b">- Clicks and fills forms</text>
+    <text x="510" y="248" font-size="14" fill="#1e293b">- Multi-step web tasks</text>
+    <text x="510" y="272" font-size="14" fill="#1e293b">- Asks before risky steps</text>
+    <rect x="510" y="318" width="170" height="40" rx="8" fill="#d97706"/>
+    <text x="595" y="343" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">+ web pages you allow</text>
+  </g>
+
+  <g>
+    <rect x="720" y="100" width="210" height="280" rx="14" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+    <text x="825" y="134" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Claude Code</text>
+    <text x="825" y="158" text-anchor="middle" font-size="13" fill="#475569">terminal, IDE, web, desktop</text>
+    <text x="740" y="200" font-size="14" fill="#1e293b">- Reads and edits code</text>
+    <text x="740" y="224" font-size="14" fill="#1e293b">- Runs commands, tests</text>
+    <text x="740" y="248" font-size="14" fill="#1e293b">- VS Code, JetBrains</text>
+    <text x="740" y="272" font-size="14" fill="#1e293b">- Git, PRs, routines</text>
+    <rect x="740" y="318" width="170" height="40" rx="8" fill="#334155"/>
+    <text x="825" y="343" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">+ your repository</text>
+  </g>
+</svg>
