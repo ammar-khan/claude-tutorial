@@ -1,6 +1,6 @@
-# 15. Practice: twelve hands-on exercises
+# 16. Practice: fourteen hands-on exercises
 
-[Home](../README.md) | Previous: [Routines](14-routines.md) | Next: [Quick reference](16-quick-reference.md)
+[Home](../README.md) | Previous: [Harness engineering](15-harness-engineering.md) | Next: [Quick reference](17-quick-reference.md)
 
 ![Person working at a desk with a laptop](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200&q=80&auto=format&fit=crop)
 <sub>Photo: Chris Ried on Unsplash</sub>
@@ -23,6 +23,8 @@ is invented. Do them in order, or jump to the level you need.
 | 10 | Plan mode on a real change | Claude Code | Advanced |
 | 11 | Write your CLAUDE.md layers | Claude Code | Advanced |
 | 12 | Schedule a routine | Claude Code (cloud) | Advanced |
+| 13 | Interview me into a spec | Chat or Claude Code | Intermediate |
+| 14 | Writer and reviewer | Claude Code | Advanced |
 
 ---
 
@@ -322,4 +324,59 @@ no code was pushed to `main`. Pause or delete the routine afterwards if you
 do not want it running weekly.
 
 ---
-[Home](../README.md) | Previous: [Routines](14-routines.md) | Next: [Quick reference](16-quick-reference.md)
+
+## Exercise 13 - Interview me into a spec
+
+**Surface:** Chat, or Claude Code | **Model:** Opus | **Time:** 15 min
+**Teaches:** question-first prompting and writing a reusable spec.
+
+1. Pick something you want built or planned (an app feature, a garden
+   redesign, a birthday party, a study plan).
+2. Send only a one-line description plus:
+
+   ```text
+   Interview me before doing anything. Ask one short batch of questions at
+   a time, most important first, and dig into the hard parts I might not
+   have thought about (edge cases, constraints, trade-offs). When you have
+   enough, write a one-page spec: goal, requirements, out of scope, open
+   questions, and how we'll know it's done.
+   ```
+
+   In Claude Code, add `using the AskUserQuestion tool` and `write it to
+   SPEC.md`.
+3. Answer its questions honestly, including "I don't know".
+4. In a **fresh** chat (or after `/clear`), paste the spec and ask for the
+   plan or implementation.
+
+**Done when:** the spec contains at least one requirement or risk you had
+not thought of before the interview, and the fresh session can act on it
+without asking you to re-explain.
+
+---
+
+## Exercise 14 - Writer and reviewer
+
+**Surface:** Claude Code | **Model:** Sonnet to write, Opus to review | **Time:** 15 min
+**Teaches:** independent verification with a fresh context.
+
+1. In the `todo-cli` project from exercise 9, ask:
+   `Add a "search" command that finds tasks containing a word, case-insensitive, with tests.`
+2. When it is done, **do not** ask the same session if it is correct.
+   Instead:
+
+   ```text
+   Use a subagent to review the diff for the search command. Check edge
+   cases (empty query, special characters, no matches, unicode), test
+   coverage, and consistency with the other commands. Report only issues
+   that affect correctness, with file and line.
+   ```
+
+3. Paste the findings back: `Here is the review. Fix the real issues and
+   rerun the tests.`
+4. Optional: run `/code-review` and compare what it finds.
+
+**Done when:** the reviewer found at least one real gap (or clearly
+explained why there were none), fixes are made, and tests pass.
+
+---
+[Home](../README.md) | Previous: [Harness engineering](15-harness-engineering.md) | Next: [Quick reference](17-quick-reference.md)

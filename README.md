@@ -23,7 +23,7 @@ explanations, diagrams and a hands-on exercise.
 
 ### Part 1 - Beginner
 1. [Getting started](docs/01-getting-started.md) - surfaces, plans, the latest UI, models and effort
-2. [Chat and prompting](docs/02-chat.md) - how to write a brief that gets a great answer
+2. [Chat and prompting](docs/02-chat.md) - writing a great brief, question-first prompting, advanced techniques
 3. [Artifacts and real files](docs/03-artifacts.md) - shareable pages, Word, Excel, PowerPoint, PDF
 4. [Projects, instructions and memory](docs/04-projects.md) - stop re-explaining yourself
 5. [Connectors (MCP)](docs/05-connectors.md) - let Claude reach your apps, safely
@@ -35,15 +35,16 @@ explanations, diagrams and a hands-on exercise.
 9. [Plugins](docs/09-plugins.md) - install or build a whole toolkit
 
 ### Part 3 - Advanced (Claude Code)
-10. [Claude Code](docs/10-claude-code.md) - install, first session, commands, MCP, hooks, subagents
+10. [Claude Code](docs/10-claude-code.md) - install, commands, proven workflows (spec-first, verify, writer/reviewer), MCP, hooks
 11. [IDE integration](docs/11-ide-integration.md) - VS Code, JetBrains / IntelliJ, Visual Studio
 12. [Plan mode and permissions](docs/12-plan-mode.md) - stay in control of what Claude does
 13. [CLAUDE.md files and their types](docs/13-claude-md.md) - managed, user, project, local, subfolder, rules, imports
-14. [Routines and scheduled work](docs/14-routines.md) - cloud routines, desktop tasks, /loop
+14. [Routines and scheduled work](docs/14-routines.md) - cloud routines, desktop tasks, /loop, overnight reviews
+15. [Harness engineering](docs/15-harness-engineering.md) - making agents reliable: instructions, tools, state, verification, guardrails, lifecycle
 
 ### Part 4 - Practice and reference
-15. [Practice: twelve hands-on exercises](docs/15-practice.md)
-16. [Quick reference](docs/16-quick-reference.md) - cheat sheets, templates, file locations
+16. [Practice: fourteen hands-on exercises](docs/16-practice.md)
+17. [Quick reference](docs/17-quick-reference.md) - cheat sheets, question-first templates, file locations
 
 ## How the pieces fit together
 
@@ -53,7 +54,7 @@ explanations, diagrams and a hands-on exercise.
 
 - **Short on time?** Read chapters 2 and 6. They will improve every
   conversation you have.
-- **Learning by doing?** Jump to the [practice exercises](docs/15-practice.md)
+- **Learning by doing?** Jump to the [practice exercises](docs/16-practice.md)
   and follow the links back when you need the background.
 - **Developer?** Skim part 1, then read part 3 in order.
 

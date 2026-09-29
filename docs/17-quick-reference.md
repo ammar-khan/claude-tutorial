@@ -1,6 +1,6 @@
-# 16. Quick reference
+# 17. Quick reference
 
-[Home](../README.md) | Previous: [Practice](15-practice.md)
+[Home](../README.md) | Previous: [Practice](16-practice.md)
 
 ## Which feature do I need?
 
@@ -31,6 +31,18 @@
 | Check | `Review this for [errors/risks/gaps]. List issues by severity with a fix for each.` |
 | Ground | `Using only the attached [source], answer [question]. Quote your evidence. Say NOT STATED if absent.` |
 | Improve | `Shorter.` / `More direct.` / `You missed [X].` / `Now for a beginner.` |
+
+## Question-first templates
+
+| Situation | Say |
+|---|---|
+| Big or fuzzy task | `Before starting, interview me. Ask one batch of questions at a time, most important first. Don't start until I say "go".` |
+| Might be unclear | `If anything important is unclear, ask up to 3 questions first; otherwise just answer.` |
+| Check understanding | `Restate the task in your own words and list your assumptions before you begin.` |
+| Turn answers into a brief | `Now write everything we agreed as a one-page spec: goal, requirements, out of scope, open questions, done-when.` |
+| Claude Code feature | `Interview me in detail using the AskUserQuestion tool, then write SPEC.md.` then `/clear` and `Implement SPEC.md` |
+| Fix a prompt | `Here's my prompt. What's ambiguous? Rewrite it to be clearer.` |
+| Stress-test an answer | `What would a sceptical expert say is wrong with this? Then fix what matters.` |
 
 ## Claude Code cheat sheet
 
@@ -93,4 +105,4 @@ Esc Esc    rewind menu (empty input) Ctrl+R     search history
 - Model Context Protocol: [modelcontextprotocol.io](https://modelcontextprotocol.io)
 
 ---
-[Home](../README.md) | Previous: [Practice](15-practice.md)
+[Home](../README.md) | Previous: [Practice](16-practice.md)

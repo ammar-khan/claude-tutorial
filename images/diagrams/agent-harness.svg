@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="520" rx="16" fill="#ffffff"/>
+  <text x="480" y="44" text-anchor="middle" font-size="24" font-weight="700" fill="#1e293b">Agent = model + harness</text>
+  <text x="480" y="70" text-anchor="middle" font-size="15" fill="#475569">The model supplies judgement. The harness decides what it knows, what it can touch, and when it is done.</text>
+
+  <circle cx="480" cy="290" r="78" fill="#1e293b"/>
+  <text x="480" y="284" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">Model</text>
+  <text x="480" y="308" text-anchor="middle" font-size="13" fill="#cbd5e1">Haiku, Sonnet,</text>
+  <text x="480" y="326" text-anchor="middle" font-size="13" fill="#cbd5e1">Opus, Fable</text>
+
+  <g font-size="13">
+    <rect x="40" y="100" width="270" height="110" rx="12" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="60" y="128" font-size="16" font-weight="700" fill="#3730a3">1. Instructions</text>
+    <text x="60" y="152" fill="#334155">What good looks like, how you work</text>
+    <text x="60" y="176" font-family="Consolas, monospace" fill="#3730a3">CLAUDE.md, rules, skills,</text>
+    <text x="60" y="196" font-family="Consolas, monospace" fill="#3730a3">SPEC.md</text>
+
+    <rect x="345" y="100" width="270" height="92" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+    <text x="365" y="128" font-size="16" font-weight="700" fill="#92400e">2. Tools</text>
+    <text x="365" y="152" fill="#334155">What it can read and change</text>
+    <text x="365" y="176" font-family="Consolas, monospace" fill="#92400e">MCP, CLIs (gh, npm), browser</text>
+
+    <rect x="650" y="100" width="270" height="110" rx="12" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    <text x="670" y="128" font-size="16" font-weight="700" fill="#115e59">3. State and memory</text>
+    <text x="670" y="152" fill="#334155">What survives between steps</text>
+    <text x="670" y="176" font-family="Consolas, monospace" fill="#115e59">git, progress notes,</text>
+    <text x="670" y="196" font-family="Consolas, monospace" fill="#115e59">auto memory, sessions</text>
+
+    <rect x="40" y="370" width="270" height="110" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="60" y="398" font-size="16" font-weight="700" fill="#166534">4. Verification</text>
+    <text x="60" y="422" fill="#334155">How it knows it is done</text>
+    <text x="60" y="446" font-family="Consolas, monospace" fill="#166534">tests, /goal, Stop hook,</text>
+    <text x="60" y="466" font-family="Consolas, monospace" fill="#166534">reviewer subagent</text>
+
+    <rect x="345" y="398" width="270" height="92" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+    <text x="365" y="426" font-size="16" font-weight="700" fill="#991b1b">5. Guardrails</text>
+    <text x="365" y="450" fill="#334155">What it must never do</text>
+    <text x="365" y="474" font-family="Consolas, monospace" fill="#991b1b">deny rules, sandbox, hooks</text>
+
+    <rect x="650" y="370" width="270" height="110" rx="12" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+    <text x="670" y="398" font-size="16" font-weight="700" fill="#9d174d">6. Lifecycle</text>
+    <text x="670" y="422" fill="#334155">How work starts, splits and ends</text>
+    <text x="670" y="446" font-family="Consolas, monospace" fill="#9d174d">subagents, worktrees, /clear,</text>
+    <text x="670" y="466" font-family="Consolas, monospace" fill="#9d174d">claude -p, routines</text>
+  </g>
+
+  <g stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4">
+    <line x1="310" y1="190" x2="418" y2="244"/>
+    <line x1="480" y1="192" x2="480" y2="212"/>
+    <line x1="650" y1="190" x2="542" y2="244"/>
+    <line x1="310" y1="390" x2="418" y2="336"/>
+    <line x1="480" y1="398" x2="480" y2="368"/>
+    <line x1="650" y1="390" x2="542" y2="336"/>
+  </g>
+</svg>

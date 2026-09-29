@@ -1,6 +1,6 @@
 # 14. Routines and scheduled work
 
-[Home](../README.md) | Previous: [CLAUDE.md files](13-claude-md.md) | Next: [Practice](15-practice.md)
+[Home](../README.md) | Previous: [CLAUDE.md files](13-claude-md.md) | Next: [Harness engineering](15-harness-engineering.md)
 
 ![A white wall calendar](https://images.unsplash.com/photo-1578625155481-7bc40a6481b6?w=1200&q=80&auto=format&fit=crop)
 <sub>Photo: Nathan Dumlao on Unsplash</sub>
@@ -125,6 +125,36 @@ For short-lived watching while you work:
 With an interval, it repeats on that schedule. Without one, Claude picks
 the pace itself. It ends when the session ends and expires after 7 days.
 
+## Pattern: review in the morning what shipped overnight
+
+The goal of unattended work is to change your job from *watching* Claude
+to *reviewing* its results. A setup that makes that safe:
+
+1. **Write the work down.** Use the interview-then-spec workflow
+   ([chapter 10](10-claude-code.md#workflows-that-work)) to produce a
+   `SPEC.md` (or a set of well-written GitHub issues) with clear scope and
+   a verification step.
+2. **Give it a check.** Tests, lint and build commands named in
+   `CLAUDE.md`, so each run can prove its work.
+3. **Create a routine** with a prompt like:
+
+   ```text
+   Pick the oldest open issue labelled "ready-for-claude". Implement it on
+   a new claude/ branch following CLAUDE.md, run the tests and lint until
+   they pass, and open a draft PR that links the issue and includes the
+   test output. If you get stuck or the issue is unclear, comment on the
+   issue with your questions instead of guessing. One issue per run.
+   ```
+
+4. **Limit the blast radius.** Only the repositories and connectors it
+   needs; it can only push `claude/` branches; branch protection on `main`.
+5. **Review in the morning.** Read each draft PR and its evidence, then
+   merge, request changes, or close. Improve the spec template and
+   `CLAUDE.md` based on what went wrong.
+
+See [chapter 15](15-harness-engineering.md) for why each of these parts
+matters.
+
 ## Try it now (10 minutes)
 
 1. Pick a GitHub repository you own (a personal test repo is ideal).
@@ -136,4 +166,4 @@ the pace itself. It ends when the session ends and expires after 7 days.
    pushed.
 
 ---
-[Home](../README.md) | Previous: [CLAUDE.md files](13-claude-md.md) | Next: [Practice](15-practice.md)
+[Home](../README.md) | Previous: [CLAUDE.md files](13-claude-md.md) | Next: [Harness engineering](15-harness-engineering.md)
