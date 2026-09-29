@@ -171,6 +171,121 @@ secrets directly in `.mcp.json`; use environment variables.
   (you). Other events include `PreToolUse`, `Notification`,
   `UserPromptSubmit`, `Stop` and `SessionStart`.
 
+## Workflows that work
+
+These patterns come from Anthropic's
+[Claude Code best practices](https://code.claude.com/docs/en/best-practices).
+
+### 1. Interview me, then write a spec
+
+For anything bigger than a small fix, do not start with "build X". Let
+Claude question you first:
+
+```text
+I want to add CSV export to the reports page. Interview me in detail
+using the AskUserQuestion tool about implementation, UI, edge cases and
+trade-offs. Skip the obvious questions and dig into the hard parts.
+When we've covered everything, write the result to SPEC.md.
+```
+
+Then **start a fresh session** (`/clear`) and say `Implement SPEC.md`.
+The new session has clean context and a written target. A good spec names
+the files and interfaces involved, says what is out of scope, and ends
+with a check that proves the feature works.
+
+### 2. Explore, plan, implement, commit
+
+1. **Explore** in plan mode: `Read src/reports and explain how exports work today.`
+2. **Plan:** `What files need to change? Write a plan.` (Press `Ctrl+G` to
+   edit the plan yourself.)
+3. **Implement:** approve, then `Implement the plan, write tests, run them and fix failures.`
+4. **Commit:** `Commit with a descriptive message and open a PR.`
+
+Skip the plan when you could describe the whole change in one sentence.
+
+### 3. Always give it a way to verify
+
+Claude stops when the work *looks* done. Give it something that returns
+pass or fail, and it can keep going until the work *is* done:
+
+| Instead of | Say |
+|---|---|
+| `add email validation` | `write validateEmail; a@b.com is valid, "a@" and "@b.com" are not. Write those as tests, run them, and iterate until they pass.` |
+| `the build is broken` | `the build fails with this error: [paste]. Fix the root cause, don't suppress it, and show me the passing build output.` |
+| `make the page nicer` | `[screenshot] implement this design, screenshot the result, list the differences and fix them.` |
+
+For longer runs, `/goal` keeps Claude working until a condition is met,
+and a `Stop` hook can block it from finishing until your check passes. Ask
+for **evidence** (test output, the command and its result), not "it
+works".
+
+### 4. Correct early, reset often
+
+- Press `Esc` the moment it heads the wrong way; redirect with context.
+- If you have corrected the same thing **twice**, the context is full of
+  failed attempts: `/clear` and start again with a better prompt that
+  includes what you learned.
+- Use `/btw` for a quick side question that should not clutter the
+  conversation.
+- Name sessions with `/rename` and pick them up later with
+  `claude --continue` or `claude --resume`.
+
+### 5. Push research into subagents
+
+`Use subagents to investigate how authentication handles token refresh,
+and whether we already have OAuth helpers I should reuse.` The subagents
+read the files in their own context and report back a summary, keeping
+your main session focused.
+
+### 6. Writer and reviewer
+
+A fresh context reviews better than the one that wrote the code. Either
+open a second session (`Review the rate limiter in
+@src/middleware/rateLimiter.ts for edge cases and race conditions`), or
+ask for a reviewer subagent:
+
+```text
+Use a subagent to review this diff against SPEC.md. Check every
+requirement is implemented and tested, and nothing outside the scope
+changed. Report only gaps that affect correctness.
+```
+
+`/code-review` does a bug-focused review of the current diff in the same
+way.
+
+### 7. Run in parallel and at scale
+
+- **Worktrees** give each session its own checkout of the repo, so several
+  Claudes can work on different branches without clashing.
+- The **desktop app** shows several sessions side by side.
+- **Non-interactive mode** runs a single prompt from scripts or CI:
+
+  ```bash
+  claude -p "List all API endpoints" --output-format json
+  ```
+
+- **Fan out** over many files with a loop, limiting what each run may do:
+
+  ```bash
+  for f in $(cat files.txt); do
+    claude -p "Migrate $f to the new logger. Reply OK or FAIL." \
+      --allowedTools "Edit,Bash(git commit *)"
+  done
+  ```
+
+  Or ask `/batch` to split a large change across subagents for you. Test on
+  two or three files before running on all of them.
+
+### Common failure patterns
+
+| Pattern | Fix |
+|---|---|
+| **Kitchen-sink session** - unrelated tasks in one conversation | `/clear` between tasks |
+| **Correction spiral** - fixing the same mistake again and again | `/clear` and write a better first prompt |
+| **Bloated CLAUDE.md** - rules get lost in the noise | Prune it; turn must-always rules into hooks |
+| **Trust without verify** - plausible code, untested edge cases | Always give it tests or another check |
+| **Endless exploration** - "investigate X" with no scope | Scope it narrowly or use subagents |
+
 ## Working efficiently
 
 - **Give it a way to check its work.** Tests, a linter or a build command

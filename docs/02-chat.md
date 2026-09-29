@@ -45,6 +45,74 @@ would with a human draft:
 Quick, specific feedback is usually faster than trying to write the
 perfect prompt up front.
 
+## Question-first: let Claude ask you
+
+You do not have to write the perfect brief yourself. For anything bigger
+than a quick question, flip it around: give a short description and ask
+Claude to **interview you** before it starts. It will ask about things
+you had not thought to mention.
+
+```text
+I want to plan a two-week trip to Japan in April for two people.
+Before suggesting anything, ask me the questions you need answered to make
+a great plan - one short batch at a time, most important first. Don't
+propose an itinerary until I say "go".
+```
+
+Variations worth keeping:
+
+- **Clarify first:** `Before you answer, ask me up to 3 questions if
+  anything important is unclear. If nothing is, just answer.`
+- **Interview, then summarise:** `Interview me about this project until you
+  understand it, then write a one-page brief I can reuse.` Save that brief in
+  a [project](04-projects.md) so you never repeat the interview.
+- **Check understanding:** `Before starting, restate the task in your own
+  words and list your assumptions.`
+- **Improve my prompt:** `Here is a prompt I plan to use. Point out anything
+  ambiguous and rewrite it to be clearer.`
+
+In Claude Code the same idea is the "interview me, then write a spec"
+workflow ([chapter 10](10-claude-code.md#workflows-that-work)).
+
+## Techniques from Anthropic's prompting guide
+
+When a plain brief is not enough, these techniques from Anthropic's
+[prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)
+make the biggest difference:
+
+| Technique | What to do | Example |
+|---|---|---|
+| **Be explicit** | Ask for what you want, including "above and beyond" if you want it. A useful test: would a colleague with no background understand your prompt? | `Make it a complete, polished version, not a minimal draft.` |
+| **Explain why** | Give the reason behind a rule; Claude generalises from it. | `Keep sentences short - this will be read aloud to children.` |
+| **Show examples** | Two to five varied examples steer format and tone better than a description. Wrap them in tags. | `<example>Q: ... A: ...</example>` |
+| **Structure with tags** | Separate instructions, context and input with XML-style tags so nothing gets mixed up. | `<instructions>...</instructions> <report>...</report>` |
+| **Give a role** | One sentence on who Claude should be focuses tone and depth. | `You are an experienced primary-school teacher.` |
+| **Long material first** | Put long documents at the top and your question at the end. | *(paste report)* `... Now: what are the three biggest risks?` |
+| **Ask for thinking** | For hard problems, ask it to reason before answering (or raise the effort level). | `Work through this step by step, then give a short answer.` |
+| **Chain steps** | Split a big job into a sequence of prompts, each using the last result. | Outline, then draft, then critique, then final. |
+| **Say what to do, not only what not to do** | Positive instructions are followed more reliably. | `Write in flowing paragraphs` beats `No bullet points`. |
+
+A template that combines several of these:
+
+```text
+<role>You are a careful financial analyst writing for non-experts.</role>
+
+<context>
+I run a small bakery. Attached are last year's monthly sales and costs.
+I'm deciding whether to open on Sundays.
+</context>
+
+<instructions>
+1. Ask me up to 3 questions first if anything important is missing.
+2. Then estimate the likely monthly profit or loss of Sunday opening.
+3. Show your assumptions in a table, and mark anything you inferred.
+4. Finish with a one-paragraph recommendation.
+</instructions>
+```
+
+Want to practise further? Anthropic publishes a free
+[interactive prompting tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial).
+
 ## Tools inside the message box
 
 Click **+** at the bottom left of the message box:

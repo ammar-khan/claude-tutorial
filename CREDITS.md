@@ -22,7 +22,7 @@ anyway, with thanks.
 | Ch. 6 | [Magnifying glass](https://unsplash.com/photos/magnifying-glass-on-white-table-afW1hht0NSs) | Markus Winkler |
 | Ch. 7, 12 | [Writing in a notebook](https://unsplash.com/photos/person-writing-bucket-list-on-book-RLw-UC03Gwc) | Glenn Carstens-Peters |
 | Ch. 8 | [Tools on a rack](https://unsplash.com/photos/assorted-handheld-tools-in-tool-rack-t5YUoHW6zRo) | Barn Images |
-| Ch. 9 | [Cogs and gears](https://unsplash.com/photos/cogs-and-gears-GmvH5v9l3K4) | Tim Mossholder |
+| Ch. 9, 15 | [Cogs and gears](https://unsplash.com/photos/cogs-and-gears-GmvH5v9l3K4) | Tim Mossholder |
 | Ch. 10 | [Green code on a screen](https://unsplash.com/photos/green-computer-code-on-screen-MPKQiDpMyqU) | Jake Walker |
 | Ch. 14 | [White calendar](https://unsplash.com/photos/white-calendar-tG4waP7YiAg) | Nathan Dumlao |
 
